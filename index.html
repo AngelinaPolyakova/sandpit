@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>sandpit</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo">
+                <a title="sandpit" href="javscript:void(0);">sandpit</a>
+                
+            </div>
+            <nav class="navigation">
+                <button id='html' class="button button-html active">HTML</button><button id='css' class="button button-css">CSS</button><button id='javascript' class="button button-javascript">Javascript</button><button id="output" class="button button-output active">Output</button>
+            </nav>
+        </header>
+        <main class="main">
+            <textarea name="html" id="htmlChange" class="textarea textarea-html"> <h1>Hello!</h1>
+            </textarea>
+            <textarea name="css" id="cssChange" class="textarea textarea-css hidden">h1 {color: green}</textarea>
+            <textarea name="javascript" id="javascriptChange" class="textarea textarea-javascript hidden">console.log('javascript me!');</textarea>
+            <iframe id='iframe' class="iframe"></iframe>
+        </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

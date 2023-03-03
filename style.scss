@@ -1,0 +1,82 @@
+@import "null.css"; /* обнуление стилей */
+
+$dark: #052D6e;
+$light: #6A93D4;
+
+
+body {
+    font-family: sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    background-color: $light;
+    padding: 10px 20px;
+    display: flex;
+    position: relative;
+
+    .logo a {
+    font-size: 25px;
+    color: $dark;
+    text-decoration: none;
+    }
+
+    .navigation {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .button {
+            font-size: 16px;
+            font-weight: 600;
+            color: $dark;
+            border: 1px solid $dark;
+            background-color: transparent;
+            border-right: none;
+
+            &:hover {
+                opacity: .7;
+            }
+        } 
+
+        .button:first-child {
+            border-radius: 5px 0 0 5px;
+        }
+        .button:last-child {
+            border-radius: 0 5px 5px 0;
+            border-right: 1px solid $dark;
+        }
+
+        .active {
+            background-color: $dark;
+            color: $light;
+        }
+    }
+}
+
+.main {
+    display: flex;
+    height: 100vw;
+
+    .textarea {
+        border:none;
+        border-right: 1px solid $dark;
+        padding: 10px;
+    }
+
+
+    .hidden {
+        display: none;
+    }
+
+    .iframe,
+    .textarea {
+        width: 50%;
+    }
+
+}
+
