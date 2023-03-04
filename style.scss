@@ -80,3 +80,25 @@ body {
 
 }
 
+@media (max-width: 767px) {
+
+    .header {
+        justify-content: space-around;
+        padding: 10px 10px;
+        .logo a {
+            font-size: 18px;
+        }
+
+        .navigation {
+            position: static;
+            left: auto;
+            transform: none;
+            white-space: nowrap;
+
+            .button {
+                font-size: 14px;
+            }
+        }
+    }
+    
+}

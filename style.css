@@ -63,4 +63,23 @@ body {
 .main .iframe,
 .main .textarea {
   width: 50%;
+}
+
+@media (max-width: 767px) {
+  .header {
+    justify-content: space-around;
+    padding: 10px 10px;
+  }
+  .header .logo a {
+    font-size: 18px;
+  }
+  .header .navigation {
+    position: static;
+    left: auto;
+    transform: none;
+    white-space: nowrap;
+  }
+  .header .navigation .button {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=style.css.map */
